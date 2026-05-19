@@ -76,20 +76,20 @@ export function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-16"
+          className="flex justify-center mb-16"
         >
-          <div className="glass rounded-xl px-6 py-4 flex items-center gap-6 divide-x divide-border/50">
-            {badges.map((badge, index) => {
+          <div className="glass rounded-3xl px-2 py-3 sm:px-5 sm:py-4 flex items-stretch justify-between gap-3 w-full max-w-4xl">
+            {badges.map((badge) => {
               const Icon = badge.icon;
               return (
                 <div
                   key={badge.key}
-                  className={`flex items-center gap-3 ${index > 0 ? "pl-6" : ""}`}
+                  className="flex-1 min-w-0 flex flex-col items-center justify-center gap-2 rounded-3xl bg-background/25 border border-primary/15 py-4 px-3 text-center"
                 >
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-[0_0_24px_rgba(0,212,255,0.14)]">
                     <Icon className="w-5 h-5 text-white" />
                   </div>
-                  <span className="text-sm font-bold text-silver tracking-wide">
+                  <span className="text-sm sm:text-base font-semibold text-silver tracking-[0.14em] leading-tight uppercase">
                     {t.services.badges[badge.key]}
                   </span>
                 </div>

@@ -16,6 +16,14 @@ export const translations = {
       subline: "Vous avez un problème ? Vous cherchez une solution ?",
       cta: "Contactez-nous maintenant",
     },
+    about: {
+      title: "À propos de DIGIWAVE",
+      description:
+        "Nous concevons des expériences digitales audacieuses, sécurisées et inspirantes pour transformer chaque projet en une réussite exceptionnelle.",
+      slogan: "Votre succès digital commence ici.",
+      callout:
+        "Chaque idée mérite une approche créative, une technologie fiable et une vision tournée vers l'avenir.",
+    },
     services: {
       overline: "NOS SERVICES",
       title1: "Découvrez",
@@ -108,6 +116,14 @@ export const translations = {
       subline: "Got a problem? Looking for a solution?",
       cta: "Contact us now",
     },
+    about: {
+      title: "About DIGIWAVE",
+      description:
+        "We craft bold, secure, and inspiring digital experiences to turn every project into a remarkable success.",
+      slogan: "Your digital success starts here.",
+      callout:
+        "Every idea deserves a creative approach, reliable technology, and a future-focused vision.",
+    },
     services: {
       overline: "OUR SERVICES",
       title1: "Discover",
@@ -198,6 +214,14 @@ export const translations = {
       slogan2: "كن الموجة",
       subline: "هل لديك مشكلة؟ هل تبحث عن حل؟",
       cta: "تواصل معنا الآن",
+    },
+    about: {
+      title: "عن DIGIWAVE",
+      description:
+        "نصمم تجارب رقمية جريئة وآمنة وملهمة لتحويل كل مشروع إلى نجاح استثنائي.",
+      slogan: "نجاحك الرقمي يبدأ هنا.",
+      callout:
+        "كل فكرة تستحق نهجاً إبداعياً، وتقنية موثوقة، ورؤية تركز على المستقبل.",
     },
     services: {
       overline: "خدماتنا",

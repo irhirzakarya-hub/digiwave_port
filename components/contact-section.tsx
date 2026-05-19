@@ -9,7 +9,7 @@ import { useLanguage } from "@/context/language-context";
 const team = [
   {
     id: 1,
-    name: "Lahcen IRHIR Hmmouch",
+    name: "Lahcen Hmmouch",
     role: "cofounder",
     initials: "LH",
     image: "/images/lahcen.jpg",
@@ -20,7 +20,7 @@ const team = [
   },
   {
     id: 2,
-    name: "Zakaria",
+    name: "Zakaria Irhir",
     role: "founder",
     initials: "ZK",
     image: "/images/zakaria.jpg",
@@ -31,8 +31,8 @@ const team = [
   },
   {
     id: 3,
-    name: "Aissam",
-    role: "founder",
+    name: "Aissam Irhir",
+    role: "chef d equipe de developpement",
     initials: "AS",
     image: "/images/aissam.png",
     facebook: "https://web.facebook.com/issamighir",
@@ -151,8 +151,7 @@ export function ContactSection() {
                         letterSpacing: "0.05em",
                         textShadow: "0 0 10px rgba(0, 212, 255, 0.5)",
                       }}
-                    >
-                      IRHIR
+                    > 
                     </span>{" "}
                     Hmmouch
                   </>
