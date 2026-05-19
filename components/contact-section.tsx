@@ -10,7 +10,8 @@ const team = [
   {
     id: 1,
     name: "Lahcen Hmmouch",
-    role: "cofounder",
+    role: "Chef d’équipe en optimisation de pages, gestion de pages et publicité en ligne",
+    roleKey: "cofounder",
     initials: "LH",
     image: "/images/lahcen.jpg",
     facebook: "https://www.facebook.com/share/1Ev7aB8kGC/",
@@ -21,7 +22,8 @@ const team = [
   {
     id: 2,
     name: "Zakaria Irhir",
-    role: "founder",
+    role: "Responsable d’équipe design & montage",
+    roleKey: "founder",
     initials: "ZK",
     image: "/images/zakaria.jpg",
     facebook: "https://www.facebook.com/share/17fzbcMmf8/",
@@ -32,7 +34,8 @@ const team = [
   {
     id: 3,
     name: "Aissam Irhir",
-    role: "chef d equipe de developpement",
+    role: "chef d'equipe de developpement",
+    roleKey: "dev_team_lead",
     initials: "AS",
     image: "/images/aissam.png",
     facebook: "https://web.facebook.com/issamighir",
@@ -160,7 +163,7 @@ export function ContactSection() {
                 )}
               </h3>
               <p className="text-sm text-primary font-medium mb-4">
-                {t.contact[member.role as "founder" | "cofounder"]} · DIGIWAVE
+                {t.contact[member.roleKey as keyof typeof t.contact]} · DIGIWAVE
               </p>
 
               {/* Divider */}
