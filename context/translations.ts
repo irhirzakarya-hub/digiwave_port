@@ -97,6 +97,46 @@ export const translations = {
       cofounder: "Chef d’équipe en optimisation de pages, gestion de pages et publicité en ligne",
       dev_team_lead: "Chef d'équipe de développement",
     },
+    whatsapp: {
+      allServices: "Général",
+      generalServiceLabel: "le service",
+      selectService: "Choisissez un service",
+      help: "Sélectionnez un service et une question pour ouvrir WhatsApp avec un message prêt.",
+      greetingPrefix: "Bonjour {role} d'équipe DIGIWAVE,",
+      defaultRoleLabel: "l'équipe",
+      questions: [
+        {
+          label: "Demander un devis",
+          message: "je souhaite un devis pour {service}.",
+        },
+        {
+          label: "Demander le tarif",
+          message: "pouvez-vous me communiquer le tarif pour {service} ?",
+        },
+        {
+          label: "Délai estimé",
+          message: "quel est le délai estimé pour un projet de {service} ?",
+        },
+        {
+          label: "Voir des exemples",
+          message: "pouvez-vous envoyer des exemples de réalisations pour {service} ?",
+        },
+        {
+          label: "Support / maintenance",
+          message: "je voudrais connaître vos offres de support et maintenance pour {service}.",
+        },
+        {
+          label: "Offre personnalisée",
+          message: "je souhaite une offre personnalisée pour un projet de {service}.",
+        },
+        {
+          label: "Comment travaillez-vous ?",
+          message: "comment se déroule votre processus de travail pour {service} ?",
+        },
+      ],
+      pdfRequestLabel: "Demander le PDF",
+      pdfRequestMessage: "je souhaite recevoir le PDF : {title}",
+    },
     footer: {
       tagline: "Nous sommes la vague",
       rights: "Tous droits réservés.",
@@ -194,8 +234,48 @@ export const translations = {
       title: "Ready to make waves?",
       subtitle: "Got a project? A question? We're here.",
       founder: " Design & Editing Team Leader",
-      cofounder: "Social Media & Ads Team Leade",
+      cofounder: "Social Media & Ads Team Lead",
       dev_team_lead: "Development Team Lead",
+    },
+    whatsapp: {
+      allServices: "General",
+      generalServiceLabel: "the service",
+      selectService: "Choose a service",
+      help: "Select a service and a question to open WhatsApp with a ready message.",
+      greetingPrefix: "Hello {role} from the DIGIWAVE team,",
+      defaultRoleLabel: "team",
+      questions: [
+        {
+          label: "Request a quote",
+          message: "I would like a quote for {service}.",
+        },
+        {
+          label: "Ask for pricing",
+          message: "Can you share your pricing for {service}?",
+        },
+        {
+          label: "Estimated timeline",
+          message: "What is the estimated timeline for a {service} project?",
+        },
+        {
+          label: "See examples",
+          message: "Can you send examples of your work for {service}?",
+        },
+        {
+          label: "Support / maintenance",
+          message: "I would like information about support and maintenance for {service}.",
+        },
+        {
+          label: "Custom offer",
+          message: "I would like a custom offer for a {service} project.",
+        },
+        {
+          label: "How do you work?",
+          message: "How does your workflow work for {service}?",
+        },
+      ],
+      pdfRequestLabel: "Request the PDF",
+      pdfRequestMessage: "I would like to receive the PDF: {title}",
     },
     footer: {
       tagline: "We are the wave",
@@ -290,6 +370,46 @@ export const translations = {
       founder: "مسؤول فريق التصميم والمونتاج",
       cofounder: "مسؤول فريق تحسين وإدارة الصفحات والإعلانات الرقمية ",
       dev_team_lead: "رئيس فريق التطوير",
+    },
+    whatsapp: {
+      allServices: "عام",
+      generalServiceLabel: "الخدمة",
+      selectService: "اختر الخدمة",
+      help: "اختر خدمة وسؤالاً لفتح واتساب برسالة جاهزة.",
+      greetingPrefix: "مرحبًا {role} من فريق DIGIWAVE،",
+      defaultRoleLabel: "الفريق",
+      questions: [
+        {
+          label: "طلب عرض سعر",
+          message: "أود عرض سعر لخدمة {service}.",
+        },
+        {
+          label: "السعر",
+          message: "هل يمكنكم إرسال الأسعار لخدمة {service}؟",
+        },
+        {
+          label: "المدة المتوقعة",
+          message: "ما هي المدة المتوقعة لمشروع {service}؟",
+        },
+        {
+          label: "أمثلة الأعمال",
+          message: "هل يمكنكم إرسال أمثلة أعمال لخدمة {service}؟",
+        },
+        {
+          label: "الدعم والصيانة",
+          message: "أود معرفة عروض الدعم والصيانة لخدمة {service}.",
+        },
+        {
+          label: "عرض مخصص",
+          message: "أريد عرضًا مخصصًا لمشروع {service}.",
+        },
+        {
+          label: "كيف تعمل؟",
+          message: "كيف يتم العمل على خدمة {service} لديكم؟",
+        },
+      ],
+      pdfRequestLabel: "طلب الـ PDF",
+      pdfRequestMessage: "أريد استلام الـ PDF: {title}",
     },
     footer: {
       tagline: "نحن الموجة",

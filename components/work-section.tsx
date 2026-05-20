@@ -21,6 +21,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { useLanguage } from "@/context/language-context";
+import WhatsappQuickReplies from "@/components/ui/whatsapp-quick-replies";
 
 interface DesignProject {
   id: number;
@@ -53,6 +54,8 @@ function PDFModal({
 }) {
   const [pdfError, setPdfError] = useState(false);
 
+  const { t } = useLanguage();
+
   // Reset error state when project changes
   useEffect(() => {
     setPdfError(false);
@@ -61,9 +64,14 @@ function PDFModal({
   if (!project) return null;
 
   const pdfSrc = project.url;
-  const whatsappLink = `https://wa.me/212661306863?text=${encodeURIComponent(
-    `Bonjour DIGIWAVE! Je souhaite recevoir le PDF: ${project.title}`
-  )}`;
+
+  const pdfOptions = [
+    {
+      label: t.whatsapp.pdfRequestLabel,
+      message: t.whatsapp.pdfRequestMessage.replace("{title}", project.title),
+    },
+    ...t.whatsapp.questions,
+  ];
 
   return (
     <AnimatePresence>
@@ -143,15 +151,12 @@ function PDFModal({
                     Ce document n&apos;est pas disponible en ligne. Contactez-nous
                     pour le recevoir directement.
                   </p>
-                  <a
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 rounded-full bg-green-600 text-white font-bold hover:bg-green-500 transition-all duration-300 flex items-center gap-2"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                    Contacter DIGIWAVE
-                  </a>
+                  <WhatsappQuickReplies
+                    phone="212661306863"
+                    options={pdfOptions}
+                    buttonClass="px-6 py-3 rounded-full bg-green-600 text-white font-bold hover:bg-green-500 transition-all duration-300 flex items-center gap-2"
+                    className="inline-flex items-center"
+                  />
                 </div>
               ) : (
                 <iframe

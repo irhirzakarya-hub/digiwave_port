@@ -51,7 +51,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className={`py-20 md:py-32 relative overflow-hidden ${isRTL ? "rtl" : ""}`}
+      className={`py-20 md:py-32 relative overflow-visible ${isRTL ? "rtl" : ""}`}
     >
       {/* Background - Semi-transparent per spec */}
       <div
@@ -182,6 +182,7 @@ export function ContactSection() {
                 </a>
                 <WhatsappQuickReplies
                   phone={member.whatsapp.replace(/\D/g, "")}
+                  role={t.contact[member.roleKey as keyof typeof t.contact]}
                   buttonClass="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center text-white hover:scale-110 transition-transform"
                 />
               </div>
