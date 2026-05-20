@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Facebook } from "lucide-react";
-import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
+import WhatsappQuickReplies from "@/components/ui/whatsapp-quick-replies";
 import { useLanguage } from "@/context/language-context";
 
 const team = [
@@ -180,15 +180,10 @@ export function ContactSection() {
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a
-                  href={member.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center text-white hover:scale-110 transition-transform"
-                  aria-label={`WhatsApp de ${member.name}`}
-                >
-                  <WhatsAppIcon size={20} />
-                </a>
+                <WhatsappQuickReplies
+                  phone={member.whatsapp.replace(/\D/g, "")}
+                  buttonClass="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center text-white hover:scale-110 transition-transform"
+                />
               </div>
 
               {/* Phone */}

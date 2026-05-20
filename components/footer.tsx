@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/language-context";
 import { Facebook, Instagram } from "lucide-react";
-import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
+import WhatsappQuickReplies from "@/components/ui/whatsapp-quick-replies";
 
 export function Footer() {
   const { t, isRTL } = useLanguage();
@@ -85,9 +85,15 @@ export function Footer() {
                 className="w-10 h-10 flex items-center justify-center rounded-full glass hover:neon-glow text-silver hover:text-primary transition-all duration-300"
                 aria-label={social.label}
               >
-                {social.icon === "facebook" && <Facebook className="w-5 h-5" />}
-                {social.icon === "whatsapp" && <WhatsAppIcon size={20} />}
-                {social.icon === "instagram" && <Instagram className="w-5 h-5" />}
+                    {social.icon === "facebook" && <Facebook className="w-5 h-5" />}
+                    {social.icon === "whatsapp" && (
+                      <WhatsappQuickReplies
+                        phone={social.href.replace(/\D/g, "")}
+                        className=""
+                        buttonClass="w-10 h-10 flex items-center justify-center rounded-full glass hover:neon-glow text-silver hover:text-primary transition-all duration-300"
+                      />
+                    )}
+                    {social.icon === "instagram" && <Instagram className="w-5 h-5" />}
               </a>
             ))}
           </div>
